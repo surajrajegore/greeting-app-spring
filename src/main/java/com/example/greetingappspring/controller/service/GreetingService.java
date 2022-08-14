@@ -20,4 +20,3 @@ public class GreetingService implements IGreetingService{
         return new User (count.incrementAndGet(), String.format(TEMPLATE, newUser.getFirstName()) + newUser.getLastName());
     }
 }
-
