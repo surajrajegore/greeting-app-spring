@@ -1,43 +1,20 @@
 package com.example.greetingappspring.entity;
 
-
 public class User {
+    private long id;
+    private String message;
 
-
-    public int id;
-    public String firstName;
-    public String lastName;
-    public String message;
-
-    public User(int id, String firstName, String lastName, String message) {
+    public User(long id, String message) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.message = message;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String getMessage() {
@@ -47,6 +24,4 @@ public class User {
     public void setMessage(String message) {
         this.message = message;
     }
-
-
 }
